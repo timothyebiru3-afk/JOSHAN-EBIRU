@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBIRU STATICS AND TECHNOLOGY</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Full-screen airport background picture */
+            background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.85)), 
+                              url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 750px;
+            text-align: center;
+            background: rgba(15, 23, 42, 0.5);
+            padding: 40px;
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            background: linear-gradient(to right, #38bdf8, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        /* Search Bar Styles */
+        .search-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 6px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus-within {
+            border-color: #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        .search-box input::placeholder {
+            color: #cbd5e1;
+        }
+
+        .search-box button {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .search-box button:hover {
+            background: #7dd3fc;
+        }
+
+        /* Hyperlink Grid Styles */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+        }
+
+        .shortcut-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .shortcut-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-3px);
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .shortcut-card .icon {
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Your custom updated heading -->
+        <h1>EBIRU STATICS AND TECHNOLOGY</h1>
+
+        <form action="https://www.google.com/search" method="GET" target="_blank" class="search-box">
+            <input type="text" name="q" placeholder="Search the internet..." required autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="links-grid">
+            <a href="https://www.google.com" target="_blank" class="shortcut-card">
+                <span class="icon">??</span>
+                <span>Google</span>
+            </a>
+            <a href="https://www.wikipedia.org" target="_blank" class="shortcut-card">
+                <span class="icon">??</span>
+                <span>Wikipedia</span>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="shortcut-card">
+                <span class="icon">??</span>
+                <span>YouTube</span>
+            </a>
+            <a href="https://www.github.com" target="_blank" class="shortcut-card">
+                <span class="icon">??</span>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
